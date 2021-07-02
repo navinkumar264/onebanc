@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>
+fetch('https://dev.onebanc.ai/assignment.asmx/')
+.then(res=>{
+if(res.ok){
+console.log('Success')
+}
+else
+console.log("Not success")
+}
+})
+.then(data=>console.log(data))
+.catch(error=>console.log('Error'))
+</script>
+</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Transaction</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="top">
+        <div class="customer__avatar">J</div>
+        <div class="customer__info">
+          <div class="customer__name">John Doe</div>
+          <div class="customer__no">+91 9710635120</div>
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="transaction__head">Today's Transaction</div>
+        <div class="account__info">
+          <div class="sent same">
+            <div class="amount__left">
+              <div class="sub">Sent</div>
+              <div class="amount">2566 ₹</div>
+            </div>
+            <div class="trans red"><i class="fa fa-arrow-up"></i></div>
+          </div>
+          <div class="received same">
+            <div class="amount__left">
+              <div class="sub">Received</div>
+              <div class="amount">1566 ₹</div>
+            </div>
+            <div class="trans"><i class="fa fa-arrow-down"></i></div>
+          </div>
+        </div>
+        <div class="transactions">
+          <div class="transaction__head history">History</div>
+          <div class="date">7 Oct 2021</div>
+          <div class="amount__transaction">
+            <div class="transaction">
+              <div class="left">
+                <div class="transaction_id">
+                  <div class="transaction__amount">₹ 1200</div>
+                  <div class="id_head">Transaction ID</div>
+                  ASFBNCHIUH#$43
+                </div>
+              </div>
+              <div class="right">
+                <a href="/info.html" class="right__icons">
+                  <i class="fa fa-angle-right"></i>
+                </a>
+              </div>
+            </div>
+            <div class="trans red"><i class="fa fa-arrow-up"></i></div>
+          </div>
+          <div class="date">21 Oct 2021</div>
+          <div class="amount__transaction received_it">
+            <div class="trans extra"><i class="fa fa-arrow-down"></i></div>
+            <div class="transaction">
+              <div class="left">
+                <div class="transaction_id">
+                  <div class="transaction__amount">₹ 1300</div>
+                  <div class="id_head">Transaction ID</div>
+                  ASFBNCHIUH#$43
+                </div>
+              </div>
+              <div class="right">
+                <a href="info.html" class="right__icons">
+                  <i class="fa fa-angle-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

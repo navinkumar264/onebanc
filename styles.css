@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 414px;
+    height: 97vh;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #dddddd;
+    border-radius: 15px;
+    background-color: #0A1931;
+}
+
+.top{
+    display: flex;
+    align-items: center;
+    padding: 1em;
+}
+
+.customer__avatar{
+    background-color: rgb(158, 235, 158);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 .5em;
+    font-size: 1.2em;
+    color: green;
+}
+
+.customer__name{
+    font-size: 1em;
+    font-weight: 400;
+    color: #fff;
+}
+
+.customer__no{
+    font-size: .8em;
+    color: #fff;
+}
+
+.bottom{
+    padding: 2em 1em 1em 1em;
+    background-color: #fff;
+    flex-grow: 1;
+    border-radius: 15px;
+}
+
+.transaction__head{
+    font-size: .9em;
+    font-weight: 600;
+    padding-bottom: .3em;
+    color: #919191;
+}
+
+.account__info{
+    display: flex;
+    justify-content: space-between;
+}
+
+.date{
+    font-size: .7em;
+    display: flex;
+    justify-content: center;
+    padding: .2em;
+}
+.same{
+    padding: 1em;
+    border-radius: 15px;
+    border: 2px solid #dddddd;
+    width: 49%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sub{
+    font-size: .8em;
+    color: rgb(156, 156, 156);
+}
+.amount{
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.trans{
+    width: 30px;
+    height: 30px;
+    background-color: rgb(145, 233, 145);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    color: green;
+    justify-content: center;
+}
+
+.red{
+    background-color: rgb(243, 169, 169);
+    color: red;
+}
+
+.transactions{
+    padding-top: 1em;
+}
+.transaction{
+    border: 2px solid #dddddd;
+    padding: 1em;
+    border-radius: 15px;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: .5em;
+}
+
+.transaction__amount{
+    font-size: 2em;
+    font-weight: 600;
+    color: #000;
+}
+
+.id__head{
+    font-size: .65em;
+}
+.transaction_id{
+    font-size: .7em;
+    padding-top: .5em;
+    color: rgb(156, 156, 156);
+}
+
+.history{
+    padding-bottom: .5em;
+}
+
+
+
+.amount__transaction{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+}
+.right__note{
+    font-size: .7em;
+    font-weight: 500;
+}
+.right__icons{
+    font-size: 2em;
+    color: #525252;
+}
+
+.extra{
+    margin-right: .5em;
+}
+
+.received_it{
+    display: flex;
+    justify-content: flex-end;
+}
